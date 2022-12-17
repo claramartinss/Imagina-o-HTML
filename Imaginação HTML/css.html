@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/css.css" />
+    <title>CSS</title>
+</head>
+<body>
+    <p>
+        <a href="principal.html"><input type="button" value="Principal" class="botao"></a>
+        <a href="index.html"><input type="button" value="Home" class="botao"></a>
+        <a href="MulheresNaTI.html"><input type="button" value="Mulheres na aréa da TI" class="botao"></a>
+        <a href="Marvel.html"><input type="button" value="Marvel" class="botao"></a>
+        <a href="Imagem.html"><input type="button" value="Imagem" class="botao"></a>
+        <a href="GitHub.html"><input type="button" value="GitHub" class="botao"></a>
+        <a href="css.html"><input type="button" value="CSS" class="botao"></a>
+        <a href="formulario.html"><input type="button" value="Formulario" class="botao"></a>
+        <a href="imagem_css.html"><input type="button" value="Imagem CSS" class="botao"></a>
+        <a href="js.html"><input type="button" value="JavaScript" class="botao"></a>
+    </p>
+    <hr color="blue" />
+    <h1 class="titulo"> O que é CSS?</h1>
+    <h1> O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como serão exibidos os elementos contidos no código de uma página da internet e sua maior vantagem é efetuar a separação entre o formato e o conteúdo de um documento.</h1>
+    <p><img src="Imagens/css.jpg" alt="Erro ao carregar..." /></p>
+    <hr color="blue" />
+    <p>
+        <a name="subir" />
+        <a href="#meio">Sintaxe e inclusão de CSS</a> ||
+        <a href="#fim">20 comandos</a>
+    </p>
+    <h1 class="titulo"> CSS</h1>
+    
+    <h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;Quando	 escrevemos	 o	 HTML,	 marcamos	 o	 conteúdo	 da	 página	 com	 tags	 que	 melhor	 representam	 o significado	 daquele	 conteúdo.	 Quando	 abrimos	 a	 página	 no	 navegador	 é	 possível	 perceber	 que	 ele mostra	as	informações	com	estilos	diferentes.<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Um h1, por exemplo, por padrão é apresentado em negrito numa fonte maior. Parágrafos de	texto são espaçados	entre si, e	assim por diante. Isso quer	dizer que o	navegador tem um <i>estilo padrão </i> para as tags que usamos. Porém para fazer sites bonitos, ou com o visual próximo de uma dada identidade visual (design), vamos precisar personalizar a <i> apresentação padrão </i> dos elementos da página. <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Antigamente,	 isso	 era	 feito	 no	 próprio	 HTML.	 Caso	 houvesse	 a	 necessidade	 de	 um	 título	 ser vermelho,	era	só	fazer:<br><br>
+        &lt;h1&gt;&lt;font color="red"&gt;MusicDot anos 90&lt;/font&gt;&lt;/h1&gt;<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Além da	tag &lt;font&gt;, várias outras	tags de	estilo existiam. Mas isso é	passado. Hoje em dia tags HTML	para estilo	são	má	prática	e	jamais	devem	ser	usadas,	são	interpretadas	apenas	para	o	modo	de compatibilidade.<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Em seu	lugar, surgiu o	CSS	(Cascading Style Sheet ou folha	de estilos em cascata),	que	é uma outra linguagem, separada	do	HTML,	com	objetivo	único	de	cuidar	da	estilização	da	página.	A	vantagem	é que	 o	 CSS	 é	 bem	 mais	 robusto	 que	 o	 HTML	 para	 estilização,	 como	 veremos. Mas, principalmente, escrever	formatação visual misturado	com	conteúdo de	texto no HTML se mostrou algo impraticável.	O CSS resolve isso	separando	as	coisas;	regras	de	estilo	não	aparecem	mais	no	HTML,	apenas	no	CSS.
+    </h2>
+    <a name="meio" />
+    <h1 class="titulo">Sintaxe e inclusão de CSS</h1>
+    <h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;A sintaxe do CSS tem estrutura simples: é uma declaração de propriedades e valores separados por um sinal de dois pontos ":", e cada propriedade é separada por um sinal de ponto e vírgula ";" da seguinte maneira:
+        color: blue;
+        background-color: yellow;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;O elemento que receber essa propriedades será exibido com o texto na cor azul e com o fundo amarelo. Essas propriedades podem ser declaradas de três maneiras diferentes.
+    </h2>
+    <h3 class="subtitulo">Arquivo externo</h3>
+    <h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;A terceira maneira de declararmos os estilos do nosso documento é com um arquivo externo com a extensão .css. Para que seja possível declarar nosso CSS em um arquivo à parte, precisamos indicar em nosso documento HTML uma ligação entre ele e a folha de estilo (arquivo com a extensão .css).<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Além da melhor organização do projeto, a folha de estilo externa traz ainda as vantagens de manter nosso HTML mais limpo e do reaproveitamento de uma mesma folha de estilos para diversos documentos.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;A indicação de uso de uma folha de estilos externa deve ser feita dentro da tag &lt;head&gt; de um documento HTML:<br>
+        &lt;link rel="stylesheet" href="estilos.css"&gt;<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;E dentro do arquivo estilos.css colocamos apenas o conteúdo do CSS:<br><br>
+        p {<br>
+        color: blue;<br>
+        background-color: yellow;<br>
+        }<br>
+    </h2>    
+    <a name="fim" />
+    <h3 class="subtitulo">20 comandos do CSS:</h3>
+    <h2>
+        UNIDADES:<br>
+        px = Tamanho em pixels (relativo ao dispositivo).<br>
+        em = Tamanho relativo à fonte utilizada no elemento ao qual está inserido.<br>
+        ex = Correspondente à altura da fonte 'x’.<br><br>
+        BORDAS:<br>
+        border-top-width, border-right-width, border-bottom-width, border-left-width = Largura das bordas em cada um dos quatro lados: superior, direito, inferior e esquerdo.<br>
+        border-width = Atalho para definir de uma só vez larguras de bordas para todos os lados.<br>
+        border-top-color, border-right-color, border-bottom-color, border-left-color = Cor das bordas em cada um dos quatro lados: superior, direito, inferior e esquerdo. <br>
+        border-color = Atalho para definir de uma só vez cores de bordas para todos os lados.<br>
+        border-top-style, border-right-style, border-bottom-style, border-left-style = Estilo de bordas em cada um dos quatro lados: superior, direito, inferior e esquerdo.<br>
+        border-style = Atalho para definir de uma só vez estilos de bordas para todos os lados.<br>
+        border-top, border-right, border-bottom, border-left = Atalho para definir largura, estilo e cor das bordas superior, direita, inferior ou esquerda.<br>
+        border = Atalho para largura, estilo e cor das quatro bordas.<br><br>
+        MARGENS:<br>
+        margin-top, margin-right, margin-bottom, margin-left = Tamaho da margem para cada um dos lados: superior, direito, inferior e esquerdo<br>
+        margin = Atalho para definir de uma só vez o tamanho da margem para todos os lados.<br><br>
+        ESPAÇAMENTO:<br>
+        padding-top, padding-right, padding-bottom, padding-left = Distância utilizada para espaçamento em cada um dos quatro lados: superior, direito, inferior e esquerdo.<br>
+        padding = Atalho para definir de uma só vez a distância de espaçamento para todos os lados.<br>
+    </h2>
+    <a href="#subir">Subir</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+	background-color: #000;
+	text-align:center;
+}
+
+p {
+	background-color: #ffd800;
+	border-radius: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+.botao {
+	background-color: #ffffff;
+	border-width: 0;
+	border-radius: 10px;
+	margin: 0 15px;
+}
+
+.titulo {
+	font-family: "Copperplate Gothic";
+	font-size: 2em;
+	text-align: center;
+	color: #FFF;
+}
+
+h1 {
+	font-family: "Times New Roman";
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+}
+
+img {
+	border: 1px solid;
+	width: 300px;
+	height: 200px;
+}
+
+h2 {
+	margin-left: 10%;
+	margin-right: 10%;
+	color: #FFF;
+	font-weight: normal;
+	font-family: "Times New Roman";
+	font-size: 20px;
+}
+
+.subtitulo {
+	font-family: "Copperplate Gothic";
+	margin-left: 10%;
+}

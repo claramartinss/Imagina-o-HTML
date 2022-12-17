@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-image: url("../Imagens/background.jpg");
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+p {
+    text-align: left;
+    text-align: justify;
+}
+#nk {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+nav {
+    background-color: black;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+h1, a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+}
+nav, ul {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    padding: 0 20px;
+}
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+li:hover, h1:hover, button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: grey;
+}
+button:focus ~ ul {
+    height: 360px;
+}
+@media (max-width: 1200px) {
+    nav, ul {
+        flex-direction: column;
+    }
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+    h1 {
+       margin: 10px;
+    }
+    button {
+        display: flex;
+    }
+    li, ul {
+        width: 100%;
+    }
+    img {
+        margin: 10px;
+    }
+}
+#LogoImagem{
+    height: 70px;
+}
+.Alin {
+    display: table;
+    float: center;
+}
+.Img {
+    display: table-cell;
+    float: left;
+}
+.Princ {
+    display: table-cell;
+    float: left;
+}
+h2{
+    width: 40%;
+    background-color: #000000;
+    margin: auto;
+    margin-top: 3em ;
+    padding: 1em;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3em;
+    border: 3px solid #2dcee0;
+    border-radius: 1em;
+    font-family: 'Arial';
+}
+.Canj {
+    text-align: center;
+}
+#Desenho {
+    margin: 13%;
+    width: 30%;
+}
+
+#ImgLin {
+    height: 200px;
+}
+.Buton {
+    width: 20%;
+    background-color: wheat;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    border: 3px solid black;
+    border-radius: 1em;
+    font-family: 'Arial';
+}
+
+.Buton:hover {
+    background-color: chocolate;
+    transition: 0.6s;
+}
+#Bloco {
+    text-align: left;
+}
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: Black;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.titulo{
+    color:#ffffff;
+    font-size: 2em;
+}

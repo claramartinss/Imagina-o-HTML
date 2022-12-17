@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="css/formulario.css" />
+</head>
+<body>
+    <h1>
+        <a href="principal.html"><input type="button" value="Principal" class="botao"></a>
+        <a href="index.html"><input type="button" value="Home" class="botao"></a>
+        <a href="MulheresNaTI.html"><input type="button" value="Mulheres na aréa da TI" class="botao"></a>
+        <a href="Marvel.html"><input type="button" value="Marvel" class="botao"></a>
+        <a href="Imagem.html"><input type="button" value="Imagem" class="botao"></a>
+        <a href="GitHub.html"><input type="button" value="GitHub" class="botao"></a>
+        <a href="css.html"><input type="button" value="CSS" class="botao"></a>
+        <a href="formulario.html"><input type="button" value="Formulario" class="botao"></a>
+        <a href="imagem_css.html"><input type="button" value="Imagem CSS" class="botao"></a>
+        <a href="js.html"><input type="button" value="JavaScript" class="botao"></a>
+    </h1>
+    <hr color="#FFFFFF">
+    <h2> Dados pessoais</h2>
+    <form method="get" action="envio_dados.php">
+        <label for="email">E-mail:</label>
+        <input class="entrada" type="email" name="email"><br>
+        <label for="nome">Nome:</label>
+        <input class="entrada" type="text" name="nome"><br>
+        <label for="date">Data de nascimento:</label>
+        <input class="entrada" type="date" name="data"><br>
+        <label for="tel">Telefone:</label>
+        <input class="entrada" type="tel" name="tel"><br><br>
+
+        <p>Maior de 18?</p>
+        <input type="radio" name="idade" value="1"> Sim <br>
+        <input type="radio" name="idade" value="2"> Não <br>
+
+        <input class="botao-enviar" type="submit" name="enviar" value="Concluido">
+    </form>
+</body>
+</html>

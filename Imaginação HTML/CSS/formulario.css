@@ -1,0 +1,41 @@
+body{
+	background-color: #000000;
+}
+h1 {
+	background-color: #ffffff;
+	border-width: 5px;
+	border-radius: 20px;
+	border-color: #0026ff;
+	padding: 5px;
+	text-align: center;
+	color: #ffffff;
+}
+h2 {
+	font-size:3em;
+	font-family:'Copperplate Gothic';
+	text-align:center;
+	color:#ffffff;
+}
+form {
+	text-align: center;
+	color: #ffffff;
+	margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid #ffffff;
+	border-radius: 1em;
+}
+.entrada {
+	border-radius: 1em;
+}
+input.entrada {
+	width: 10em;
+	height: 1em;
+}
+.botao {
+	margin: 0 15px;
+	border-radius: 15px;
+	font-family: "Copperplate Gothic";
+	background-color: #000000;
+	color: #fff;
+}
